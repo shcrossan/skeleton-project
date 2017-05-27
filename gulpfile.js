@@ -6,6 +6,7 @@ var scssToCss = require("gulp-sass");
 var cssMin = require("gulp-cssmin");
 var uglify = require("gulp-uglify");
 var watch = require('gulp-watch');
+var browserSync = require('browser-sync').create();
 
 /**
  * SASS > CSS > CSSMIN
@@ -17,12 +18,13 @@ gulp.task('scssToCssMin', function () {
   return gulp.src(scssToCssMinSrc)
     .pipe(scssToCss({ includePaths : ['assets/scss']}).on('error', scssToCss.logError))
     .pipe(cssMin())
-    .pipe(gulp.dest(scssToCssMinDest));
+    .pipe(gulp.dest(scssToCssMinDest))
+    .pipe(browserSync.stream({match: '**/*.css'}));
 });
 
 
 /**
- * WATCH
+ * WATCH SCSS
  */
 
 gulp.task('watchScss', function() {
@@ -33,9 +35,25 @@ gulp.task('watchScss', function() {
 gulp.task('watch', ['watchScss']);
 
 /**
+ * BROWSER SYNC
+ */
+
+// Static server
+gulp.task('browser-sync', function() {
+  browserSync.init(
+    {
+       injectChanges: true,
+       server: "./"
+     }
+  );
+
+  gulp.watch("./**/*.html").on('change', browserSync.reload);
+});
+
+/**
  * REGISTER TASKS
  */
 
 gulp.task('build', [ 'scssToCssMin' ]);
 
-gulp.task("default", [ 'build', 'watch' ]);
+gulp.task("default", [ 'build', 'watch', 'browser-sync' ]);
