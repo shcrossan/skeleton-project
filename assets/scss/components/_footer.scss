@@ -1,0 +1,15 @@
+.footer{
+    background-color: #444;
+    border-top: 15px solid #bbb;
+    padding-top: 10px;
+    color: white;
+
+
+    &__privacy{
+        background-color: red;
+        padding: 10px 0;
+        background-color: white;
+        margin-top: 10px;
+        color: black;
+    }
+}

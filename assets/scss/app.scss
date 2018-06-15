@@ -1,3 +1,27 @@
-//@import "partials/foundation";
-@import "partials/bootstrap";
+// @import "partials/foundation";
+// @import "partials/bootstrap";
 @import "partials/global";
+
+body{
+    font-family: 'Arial',helvetica,sans-serif;
+}
+*{
+    &::selection{
+        background: #fe60a4;
+    }
+}
+
+// Vars
+$primary-color: #51b5e6;
+$neutral: #aaa;
+
+//Components
+@import "components/header";
+@import "components/footer";
+@import "components/profile";
+@import "components/utility";
+@import "components/social";
+@import "components/quiz-banner";
+@import "components/quote";
+@import "components/ordered-list";
+@import "components/button";

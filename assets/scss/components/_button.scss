@@ -1,0 +1,13 @@
+.button{
+    color: white;
+    border-radius: 5px;
+    padding: 20px 40px;
+    transition: padding 300ms;
+    background: linear-gradient(to bottom,rgba(255,255,255,.2),rgba(255,255,255,0)),#246ec8;
+
+    
+    &:hover{
+        padding: 20px 45px;
+        background: linear-gradient(to bottom,rgba(255,255,255,.2),rgba(255,255,255,0)),#246ec8;
+    }
+}

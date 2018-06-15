@@ -1,0 +1,24 @@
+.ordered-list {
+    counter-reset: orderCounter;
+    dt{
+        position: relative;
+        padding-left: 35px;
+        margin-bottom: 10px;
+        font-weight: 400;
+        &:before {
+            content: counter(orderCounter);
+            counter-increment: orderCounter;
+            background-color: $primary-color;
+            display: inline-block;
+            position: absolute;
+            line-height: 30px;
+            height: 30px;
+            width: 30px;
+            text-align: center;
+            color: white;
+            border-radius: 50%;
+            left: 0;
+            font-weight: 600;
+        }
+    }
+} 

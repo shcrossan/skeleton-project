@@ -1,0 +1,73 @@
+.line-seperator{
+    height: 2px;
+    background-color: $neutral;
+    width: 100%;
+    display: block;
+    margin: 10px 0;
+}
+
+.text{
+    // Size
+    &--profile{
+        font-size: 14px;
+    
+    }
+
+    &--subtitle{
+        font-size: 23px;
+    }
+
+    &--heading{
+        font-size: 30px;
+    }
+
+    &--title{
+        font-size: 37px;
+    }
+
+    // Weight
+    &--black{
+        font-weight: 900;
+    }
+
+    &--bold{
+        font-weight: 600;
+    }
+    
+    // colors
+    &--neutral{
+        color: $neutral
+    }
+
+    &--primary{
+        color: $primary-color;
+    }
+
+    &--link{
+        color: $primary-color;
+        &:hover{
+            color: #fe60a4;
+            text-decoration: underline;
+        }
+    }
+
+    &--footer-link{
+        color: white;
+        &:hover{
+            color: $primary-color;
+            text-decoration: underline;
+        }
+    }
+
+    &--alert-link{
+        color: red;
+        &:hover{
+            color: $primary-color;
+            text-decoration: underline;
+        }
+    }
+
+    &--italic{
+        font-style: italic;
+    }
+}

@@ -1,0 +1,25 @@
+.quiz-banner{
+    background-color: $primary-color;
+    color: white;
+    padding: 10px;
+
+    &__text{
+        font-size: 20px;
+        color: white;
+    }
+
+    &__button{
+        background-color: #ffff00;
+        display: block;
+        text-align: center;
+        font-size: 25px;
+        color: black;
+        border-radius: 5px;
+        border-radius: 5px;
+        border-style: solid;
+        border-width: 3px;
+        border-color: #ff0 #e6e600 #e6e600 #ff0;
+        // box-shadow:inset 2px -2px 5px 0 rgba(0,0,0,.19)
+        margin-bottom: 10px;
+    }
+}
