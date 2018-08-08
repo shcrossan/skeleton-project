@@ -1,0 +1,35 @@
+/**
+ * Card
+ */
+.card {
+
+  // Variables
+  $this: '.card';
+
+  // Base styling
+
+  /**
+   * Elements
+   */
+
+  &__title {
+    color: $primary-color;
+  }
+
+  &__description {
+    color: $secondary-color;
+  }
+
+  /**
+   * Modifiers
+   */
+
+  &--up-trend {
+
+    #{$this}__title {
+      color: green;
+    }
+
+  }
+
+}

@@ -1,3 +1,36 @@
-//@import "partials/foundation";
-@import "partials/bootstrap";
+
+
+// TODO: Set Foundation breakpoints to whatever you want
+
+//$breakpoints: (
+//  small: 0px,
+//  medium: 640px,
+//  large: 1024px,
+//  xlarge: 1200px,
+//  xxlarge: 1440px,
+//);
+
+// Foundation
+@import "partials/foundation";
+//@import "partials/bootstrap";
+
+// Font Awesome
+@import "partials/font-awesome";
+
+// Variables
+@import "partials/variables";
+@import "partials/variable-mappings";
+
+// Mixins
+@import "mixin/breakpoint";
+@import "mixin/transition";
+
+// Global
 @import "partials/global";
+
+// Components
+@import "component/buttons";
+@import "component/card";
+@import "component/dashboard";
+@import "component/nav-bar";
+@import "component/nav-menu";

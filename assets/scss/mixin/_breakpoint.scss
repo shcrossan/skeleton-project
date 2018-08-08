@@ -1,0 +1,34 @@
+
+@mixin breakpoint($breakpoint) {
+
+  // SMALL UP
+  @if $breakpoint == 'small-up' {
+    @media (min-width: 0px) { @content; }
+  }
+
+  // MEDIUM UP
+  @if $breakpoint == 'medium-up' {
+    @media (min-width: $small-breakpoint-max + 1) { @content; }
+  }
+
+  // LARGE UP
+  @if $breakpoint == 'large-up' {
+    @media (min-width: $medium-breakpoint-max + 1) { @content; }
+  }
+
+  /////////////////////////////////////////////
+  // ONLY USE THE BELOW MEDIA QUERIES
+  // IF MOBILE FIRST QUERIES CAN'T BE USED
+  /////////////////////////////////////////////
+
+  // SMALL ONLY
+  @if $breakpoint == 'small-only' {
+    @media (min-width: 0px) and (max-width: $small-breakpoint-max - 1) { @content; }
+  }
+
+  // MEDIUM ONLY
+  @if $breakpoint == 'medium-only' {
+    @media (min-width: $small-breakpoint-max + 1) and (max-width: $medium-breakpoint-max - 1) { @content; }
+  }
+
+}

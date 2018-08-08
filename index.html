@@ -1,23 +1,111 @@
 <html>
 	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" type="text/css" href="assets/css/app.css">
 	</head>
 	<body>
-	<div class="container">
-		<div class="row">
-			<div class="col">
-				<h1 class="shane">index.html!</h1>
-				<a href="about.html">About page</a>
+		<div class="dashboard">
+
+			<div class="nav-bar">
+				<div class="grid-x grid-x-margin">
+					<div class="small-6">
+						Hi {name}, welcome...
+					</div>
+					<div class="small-6 ">
+						<a class="button button-medium button-primary">REQUEST A FLIGHT <i class="fa fa-plane"></i></a>
+					</div>
+				</div>
 			</div>
-      <div class="col">
-				<h1 class="shane">index.html!</h1>
-				<a href="about.html">About page</a>
+
+			<div class="nav-menu">
+
+				<div class="nav-menu__logo-container">
+					JDi
+				</div>
+
+				<ul class="nav-menu__item-container">
+					<li class="nav-menu__item">
+						Dashboard
+					</li>
+					<li class="nav-menu__item">
+						Developments
+					</li>
+					<li class="nav-menu__item">
+						Drawdowns
+					</li>
+					<li class="nav-menu__item">
+						Finance
+					</li>
+					<li class="nav-menu__item">
+						Documents
+					</li>
+				</ul>
+
 			</div>
-      <div class="col">
-				<h1 class="shane">index.html!</h1>
-				<a href="about.html">About page</a>
+
+			<div class="dashboard__page-content-area" >
+				<div class="grid-container">
+					<div class="grid-x grid-margin-x">
+						<div class="cell small-5">
+							<h1>Dashboard</h1>
+						</div>
+						<div class="cell small-7">
+							<p>It's 24 days until your next Xclusive Jets flight to Ibiza</p>
+						</div>
+					</div>
+					<div class="grid-x grid-margin-x">
+						<div class="cell small-12">
+							<div class="card">
+								<div class="card__map">
+									<div id="googleMap" style="width:100%;height:400px;"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="grid-x grid-margin-x">
+						<div class="cell medium-4">
+							<div class="card">
+								<h4 class="card__title">Hours Remaining</h4>
+								<p class="card__value">75h 52m</p>
+								<div class="card__footer">
+									<p class="card__footer-desc">Opening Balence 100h</p>
+								</div>
+							</div>
+						</div>
+						<div class="cell medium-4">
+							<div class="card card--up-trend">
+								<h4 class="card__title">Total Time Flown</h4>
+								<p class="card__value">125h 52m</p>
+								<div class="card__footer">
+									<p class="card__footer-desc">Last flight Time 1h 29m</p>
+								</div>
+							</div>
+						</div>
+						<div class="cell medium-4">
+							<div class="card">
+								<h4 class="card__title">Legs Flows</h4>
+								<p class="card__value">52</p>
+								<div class="card__footer">
+									<p class="card__footer-desc">Last flight 02/07/18</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
-	</div>
 	</body>
 </html>
+<script>
+  function myMap()
+  {
+    var mapProp = {
+      center: new google.maps.LatLng(51.508742, -0.120850),
+      zoom:   5,
+    };
+    var map = new google.maps.Map(
+      document.getElementById("googleMap"), mapProp);
+  }
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js"></script>

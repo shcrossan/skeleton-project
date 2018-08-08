@@ -3,9 +3,10 @@
   "version": "1.0.0",
   "author": "Shane Crossan, Lead Junkie",
   "dependencies": {
-    "foundation-sites": "^6.3.1",
     "bootstrap": "^3.3.7",
     "browser-sync": "^2.18.13",
+    "font-awesome": "^4.7.0",
+    "foundation-sites": "^6.3.1",
     "gulp": "^3.9.1",
     "gulp-cssmin": "^0.1.7",
     "gulp-sass": "^3.1.0",

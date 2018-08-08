@@ -1,0 +1,36 @@
+/**
+ * Dashboard
+ */
+.dashboard {
+
+  // Variables
+  $this: '.dashboard';
+  $offset-top: $nav-bar--height;
+  $offset-left: $nav-menu--width;
+
+  // Base styling
+  background-color: $background-color;
+  height: 100vh;
+  position: relative;
+  padding-top: $offset-top;
+  color: #ffffff;
+  @include transition();
+
+  @include breakpoint('medium-up') {
+    padding-left: $offset-left;
+  }
+
+  /**
+   * Elements
+   */
+
+  &__page-content-area {
+    background-color: $background-color;
+  }
+
+  /**
+   * Modifiers
+   */
+
+
+}

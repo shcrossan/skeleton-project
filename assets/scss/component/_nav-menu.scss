@@ -1,0 +1,37 @@
+/**
+ * Nav Menu
+ */
+.nav-menu {
+
+  // Variables
+  $this: '.nav-menu';
+  $width: $nav-menu--width;
+  @include transition();
+
+  // Base styling
+  background-color: $nav-color;
+  position: absolute;
+  top: 0;
+  width: $nav-menu--width;
+  min-height: 100vh;
+  left: -$width;
+
+  @include breakpoint('medium-up') {
+    left: 0;
+  }
+
+  /**
+   * Elements
+   */
+
+
+  /**
+   * Modifiers
+   */
+
+  &--open {
+    left: 0;
+  }
+
+
+}
