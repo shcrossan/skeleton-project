@@ -1,0 +1,78 @@
+/**
+ * Nav Bar
+ */
+.nav-block {
+
+  // Variables
+  $this: '.nav-block';
+
+  // Base styling
+  background-color: $nav-color;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  height: 100vh;
+  left: 0;
+  width: 270px;
+  @include transition();
+  display: flex;
+  align-items: center;
+  align-content: center;
+
+  /**
+   * Elements
+   */
+  &__logo-block{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 45px 0;
+    text-align: center;
+  }
+
+  &__navigation{
+    padding: 30px;
+  }
+
+  &__nav-item{
+    margin-bottom: 40px;
+    color: $text--color-grey;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    font-weight: 700;
+    cursor: pointer;
+    span{
+      color: $text--color-grey;
+      margin-right: 20px;
+      @include transition();
+    }
+    &--active{
+      color: $primary-color;
+      span{
+        color: $primary-color;
+      }
+    }
+    &--logout{
+      margin-bottom: 0;
+    }
+    &:hover{
+      span{
+        font-size: 24px;
+      }
+    }
+  }
+
+  &__logout{
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+  }
+
+  /**
+   * Modifiers
+   */
+
+
+}

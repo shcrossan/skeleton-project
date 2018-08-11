@@ -1,0 +1,18 @@
+.table-header{
+
+  $this: '.table-header';
+
+  margin-bottom: 10px;
+
+  &__header-element{
+
+    color: #8d8c8d;
+    font-size: 13px;
+
+    &--space-left{
+      padding-left: 30px;
+    }
+
+
+  }
+}

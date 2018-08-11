@@ -1,0 +1,44 @@
+/**
+ * Button
+ */
+.title-block {
+
+  // Variables
+  $this: '.title-block';
+
+  // Base styling
+  position: relative;
+  margin-bottom: 40px;
+
+  /**
+   * Elements
+   */
+
+  &__title{
+    color: #fff;
+    font-size: 40px;
+    display: flex;
+    align-items: flex-start;
+    align-content: flex-end;
+    line-height: 1;
+  }
+
+  &__subtitle{
+    color: #fff;
+    font-size: 21px;
+    text-align: right;
+    display: flex;
+    align-items: flex-end;
+    align-content: flex-end;
+    justify-content: flex-end;
+  }
+
+
+  /**
+   * Modifiers
+   */
+
+  &--quote{
+
+  }
+}

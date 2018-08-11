@@ -1,0 +1,62 @@
+.flight-log-details-block{
+
+  $this: '.flight-log-details-block';
+
+  &__block{
+    border-bottom: 1px solid #3f3f3f;
+    padding: 50px 0;
+  }
+
+  &__total-block{
+
+  }
+
+  &__title{
+    font-size: 30px;
+    color: $primary-color;
+    margin-bottom: 40px;
+  }
+
+  &__location{
+    h2{
+      color: #fff;
+      font-size: 30px;
+      margin-bottom: 10px;
+      line-height: 1;
+    }
+    p{
+      margin-bottom: 0;
+      font-size: 15px;
+      color: #8d8c8d;
+    }
+  }
+  &__icon{
+    color: $primary-color;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+  }
+
+  &__cost-block{
+    text-align: center;
+    margin-bottom: 50px;
+    color: $primary-color;
+    h2{
+      font-size: 40px;margin-bottom: 20px;
+    }
+    p{
+      margin-bottom: 0;
+      font-size: 14px;
+      font-weight: 700;
+    }
+  }
+
+  &__cost-info{
+    text-align: center;
+    font-size: 15px;
+    line-height: 30px;
+    color: #8d8c8d;
+  }
+
+}

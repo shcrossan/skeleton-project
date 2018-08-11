@@ -1,0 +1,40 @@
+.info-card{
+
+  $this: '.icon-info-card';
+
+  &__icon{
+    color: $primary-color;
+    font-size: 20px;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__info{
+    color: #fff;
+    &--space-left{
+      padding-left: 10px;
+    }
+    &--total{
+      border-top: 1px solid #3f3f3f;
+      padding: 30px 0;
+      color: $primary-color;
+      font-weight: bold;
+    }
+  }
+
+  &__title{
+    font-size: 13px;
+    color: #8d8c8d;
+    margin-bottom: 10px;
+    font-weight: 700;
+  }
+
+  &--space-below{
+    margin-bottom: 40px;
+  }
+
+
+
+}

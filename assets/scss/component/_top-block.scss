@@ -1,0 +1,40 @@
+/**
+ * Button
+ */
+.top-block {
+
+  // Variables
+  $this: '.top-block';
+
+  // Base styling
+  position: relative;
+  border-bottom: 1px solid #333333;
+  margin-bottom: 45px;
+
+  /**
+   * Elements
+   */
+
+  &__name{
+    display: flex;
+    padding: 15px 15px 15px 35px;
+    align-items: center;
+    color: $text--color-grey;
+  }
+
+  &__button{
+    display: flex;
+    padding: 15px;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+
+  /**
+   * Modifiers
+   */
+
+  &--quote{
+
+  }
+}

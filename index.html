@@ -2,98 +2,126 @@
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" type="text/css" href="assets/css/app.css">
+		<link rel="stylesheet" href="https://i.icomoon.io/public/0ead7c452b/XclusiveJets/style.css">
 	</head>
 	<body>
-		<div class="dashboard">
 
-			<div class="nav-bar">
-				<div class="grid-x grid-x-margin">
-					<div class="small-6">
-						Hi {name}, welcome...
-					</div>
-					<div class="small-6 ">
-						<a class="button button-medium button-primary">REQUEST A FLIGHT <i class="fa fa-plane"></i></a>
-					</div>
+		<div class="nav-block">
+			<div class="nav-block__logo-block">
+				<img class="nav-block__logo" src="/assets/img/logo/xclusive-jets-logo.png" alt="Xclusive Jets Logo">
+			</div>
+			<div class="nav-block__navigation">
+				<div class="nav-block__nav-item nav-block__nav-item--active">
+					<span class="icon-Dashboard"></span>DASHBOARD
+				</div>
+				<div class="nav-block__nav-item">
+					<span class="icon-X"></span>UPCOMING
+				</div>
+				<div class="nav-block__nav-item">
+					<span class="icon-Quote"></span>QUOTE
+				</div>
+				<div class="nav-block__nav-item">
+					<span class="icon-Statemtnt"></span>STATEMENT
+				</div>
+				<div class="nav-block__nav-item">
+					<span class="icon-Log"></span>FLIGHT LOG
 				</div>
 			</div>
-
-			<div class="nav-menu">
-
-				<div class="nav-menu__logo-container">
-					JDi
-				</div>
-
-				<ul class="nav-menu__item-container">
-					<li class="nav-menu__item">
-						Dashboard
-					</li>
-					<li class="nav-menu__item">
-						Developments
-					</li>
-					<li class="nav-menu__item">
-						Drawdowns
-					</li>
-					<li class="nav-menu__item">
-						Finance
-					</li>
-					<li class="nav-menu__item">
-						Documents
-					</li>
-				</ul>
-
-			</div>
-
-			<div class="dashboard__page-content-area" >
-				<div class="grid-container">
-					<div class="grid-x grid-margin-x">
-						<div class="cell small-5">
-							<h1>Dashboard</h1>
-						</div>
-						<div class="cell small-7">
-							<p>It's 24 days until your next Xclusive Jets flight to Ibiza</p>
-						</div>
-					</div>
-					<div class="grid-x grid-margin-x">
-						<div class="cell small-12">
-							<div class="card">
-								<div class="card__map">
-									<div id="googleMap" style="width:100%;height:400px;"></div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="grid-x grid-margin-x">
-						<div class="cell medium-4">
-							<div class="card">
-								<h4 class="card__title">Hours Remaining</h4>
-								<p class="card__value">75h 52m</p>
-								<div class="card__footer">
-									<p class="card__footer-desc">Opening Balence 100h</p>
-								</div>
-							</div>
-						</div>
-						<div class="cell medium-4">
-							<div class="card card--up-trend">
-								<h4 class="card__title">Total Time Flown</h4>
-								<p class="card__value">125h 52m</p>
-								<div class="card__footer">
-									<p class="card__footer-desc">Last flight Time 1h 29m</p>
-								</div>
-							</div>
-						</div>
-						<div class="cell medium-4">
-							<div class="card">
-								<h4 class="card__title">Legs Flows</h4>
-								<p class="card__value">52</p>
-								<div class="card__footer">
-									<p class="card__footer-desc">Last flight 02/07/18</p>
-								</div>
-							</div>
-						</div>
-					</div>
+			<div class="nav-block__logout">
+				<div class="nav-block__nav-item nav-block__nav-item--logout">
+					<span class="icon-Logout"></span>LOGOUT
 				</div>
 			</div>
 		</div>
+
+		<div class="content-wrapper">
+
+			<div class="top-block">
+
+				<div class="grid-x">
+
+					<div class="cell large-6 top-block__name">
+						Welcome, Mr. C Phillips
+					</div>
+
+					<div class="cell large-6 top-block__button">
+						<div class="button">
+							GET A QUOTE<span class="icon-Quote"></span>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+
+			<div class="content-block">
+
+				<div class="grid-x title-block">
+					<div class="cell large-3 title-block__title">
+						Dashboard
+					</div>
+					<div class="cell large-9 title-block__subtitle">
+						It’s 24 days until your next Xclusive flight to Ibiza
+					</div>
+				</div>
+
+				<div class="map-block"></div>
+
+				<div class="grid-x grid-margin-x">
+
+					<div class="cell large-4 ticket-block">
+
+						<div class="ticket-block__locations">
+							<div class="grid-x">
+								<div class="small-4 cell ticket-block__location text-left">
+									SOU
+								</div>
+								<div class="small-4 cell ticket-block__icon">
+									<span class="icon-Plane"></span>
+								</div>
+								<div class="small-4 cell ticket-block__location text-right">
+									IBZ
+								</div>
+							</div>
+						</div>
+
+						<div class="ticket-block__line"></div>
+
+						<div class="ticket-block__info">
+							<div class="grid-x">
+								<div class="small-7">
+									<p>Fri Aug 10, 2018</p>
+									<p>10.00</p>
+								</div>
+								<div class="small-5 text-right">
+									<p>5 Pax</p>
+									<p>G-JSSE</p>
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+					<div class="cell large-4 stats-block">
+						<div class="stats-block__stat">
+							57
+						</div>
+						<p>HOURS REMAINING</p>
+					</div>
+
+					<div class="cell large-4 stats-block">
+						<div class="stats-block__stat">
+							5,975
+						</div>
+						<p>TOTAL MILES FLOWN</p>
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+
 	</body>
 </html>
 <script>

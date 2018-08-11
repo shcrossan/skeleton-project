@@ -1,0 +1,64 @@
+.ticket-block{
+
+  $this: '.ticket-block';
+
+  background-color: #333333;
+
+  &__locations{
+    margin-bottom: 10px;
+    padding: 30px 30px 20px 30px;
+  }
+
+  &__location{
+    font-size: 35px;
+    line-height: 1;
+    color: #fff;
+  }
+
+  &__icon{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    color: $primary-color;
+    font-size: 20px;
+  }
+
+  &__line{
+    width: 100%;
+    position: relative;
+    border-bottom: 1px solid #3f3f3f;
+    margin-bottom: 30px;
+    &:before{
+      content: '';
+      position: absolute;
+      left: -15px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background-color: $background-color;
+    }
+    &:after{
+      content: '';
+      position: absolute;
+      right: -15px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background-color: $background-color;
+    }
+  }
+
+  &__info{
+    padding: 0 30px 10px 30px;
+    p{
+      color: #fff;
+    }
+
+  }
+
+}

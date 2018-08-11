@@ -1,0 +1,72 @@
+.flight-log-card{
+
+  $this: '.flight-log-card';
+
+  border: 1px solid #3f3f3f;
+  border-radius: 5px;
+  background-color: #333333;
+  padding: 30px;
+  margin-bottom: 30px;
+  cursor: pointer;
+  transition: 0.5s ease;
+
+  &:hover{
+    background-color: #3e3e3e;
+    border: 1px solid #565656;
+  }
+
+  &__block{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+
+    &--row{
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+    }
+    &--center{
+      justify-content: center;
+    }
+  }
+
+  &__location{
+    h2{
+      color: #fff;
+      font-size: 30px;
+      margin-bottom: 10px;
+      line-height: 1;
+    }
+    p{
+      margin-bottom: 0;
+      font-size: 15px;
+      color: #8d8c8d;
+    }
+  }
+
+  &__icon{
+    color: $primary-color;
+    font-size: 20px;
+  }
+
+  &__date{
+    color: #fff;
+    font-size: 15px;
+    margin-bottom: 10px;
+    font-weight: 700;
+  }
+  &__time{
+    color: #fff;
+    font-size: 15px;
+    font-weight: 700;
+  }
+
+  &__plane-id{
+    color: #fff;
+    font-size: 15px;
+    margin-left: 20px;
+    font-weight: 700;
+  }
+
+}

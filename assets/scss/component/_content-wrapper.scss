@@ -1,0 +1,30 @@
+/**
+ * Nav Bar
+ */
+.content-wrapper {
+
+  // Variables
+  $this: '.content-wrapper';
+
+  // Base styling
+  background-color: $background-color;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  min-height: 100vh;
+  left: 270px;
+  right: 0;
+  overflow-y: scroll;
+
+
+  /**
+   * Elements
+   */
+
+
+  /**
+   * Modifiers
+   */
+
+
+}

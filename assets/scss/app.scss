@@ -15,7 +15,7 @@
 //@import "partials/bootstrap";
 
 // Font Awesome
-@import "partials/font-awesome";
+//@import "partials/font-awesome";
 
 // Variables
 @import "partials/variables";
@@ -32,5 +32,15 @@
 @import "component/buttons";
 @import "component/card";
 @import "component/dashboard";
-@import "component/nav-bar";
-@import "component/nav-menu";
+@import "component/nav-block";
+@import "component/content-wrapper";
+@import "component/top-block";
+@import "component/content-block";
+@import "component/title-block";
+@import "component/map-block";
+@import "component/ticket-block";
+@import "component/stats-block";
+@import "component/table-header";
+@import "component/flight-log-card";
+@import "component/flight-log-details-block";
+@import "component/info-card";
