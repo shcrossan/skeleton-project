@@ -1,0 +1,26 @@
+.table{
+
+  $this: '.table';
+
+
+  &__row{
+    padding: 20px 0;
+    border-top: 1px solid #3f3f3f;
+    font-size: 17px;
+    color: #fff;
+
+    &--primary{
+      color: $primary-color;
+    }
+
+    &--end{
+      border-bottom: 1px solid #3f3f3f;
+    }
+
+  }
+
+  &--padding-left{
+    padding-left: 30px;
+  }
+
+}
