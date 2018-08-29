@@ -17,4 +17,10 @@
     text-align: center;
   }
 
+  &__forgotten-password{
+    display: block;
+    padding: 20px 0;
+    color: $text--color-grey;
+  }
+
 }

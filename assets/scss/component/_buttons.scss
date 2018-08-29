@@ -22,18 +22,32 @@
     margin-left: 35px;
   }
 
-  /**
-   * Elements
+  &:hover{
+    background-color: $primary-color;
+    color: #1F1F1F;
+  }
+
+  /*
+    Mods
    */
 
-
-
-
-  /**
-   * Modifiers
-   */
+  &--left{
+    span{
+      margin-left: 0;
+      margin-right: 15px;
+    }
+  }
 
   &--quote{
-
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 12px;
+    justify-content: center;
   }
+
+  &--grey{
+    background-color: #636363;
+    color: #fff;
+  }
+
 }

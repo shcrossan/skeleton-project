@@ -6,7 +6,7 @@
 
 
   &__label{
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     font-size: 13px;
     color: $text--color-grey;
     text-transform: uppercase;
@@ -16,17 +16,46 @@
     border: 0;
     border-bottom: 1px solid #585858;
     box-shadow: none;
-    padding: 20px 0;
+    padding: 20px 0 30px 0;
     color: #fff;
+    margin-bottom: 0;
     &:focus{
       background-color: transparent;
       box-shadow: none;
       border: 0;
       border-bottom: 1px solid #fff;
-      & #{$this}__label{
+      #{$this}__label &{
         color: $primary-color;
       }
     }
+    &::placeholder{
+      color: $text--color-grey;
+    }
+
+    &--quote{
+      color: #fff;
+      &::placeholder {
+        color: #fff;
+      }
+    }
+  }
+
+  &__select{
+    background-color: transparent;
+    border: 0;
+    color: #fff;
+    margin-bottom: 0;
+
+    &:focus {
+      background-color: transparent;
+      box-shadow:       none;
+      border:           0;
+    }
+  }
+
+  &--quote{
+    padding-bottom: 10px;
+    border-bottom: 1px solid #3f3f3f;
   }
 
 }
