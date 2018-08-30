@@ -81,7 +81,15 @@
 								<div class="input">
 
 									<label class="input__label">From</label>
-									<input type="text" class="input__input input__input--quote" placeholder="Departure City">
+									<input id="departure-city" type="text" class="input__input input__input--quote" placeholder="Departure City">
+									<div id="departure-city-options-list" class="input__search-options hide">
+										<div class="input__search-option" data-location-name="London" data-loaction-code="LDN">London</div>
+										<div class="input__search-option" data-location-name="Cork" data-loaction-code="ORK">Cork</div>
+										<div class="input__search-option" data-location-name="Toronto" data-loaction-code="TOR">Toronto</div>
+										<div class="input__search-option" data-location-name="Barcelona" data-loaction-code="BAR">Barcelona</div>
+										<div class="input__search-option" data-location-name="Southampton" data-loaction-code="SOU">Southampton</div>
+										<div class="input__search-option" data-location-name="Exeter" data-loaction-code="EXE">Exeter</div>
+									</div>
 
 								</div>
 
@@ -200,6 +208,56 @@
 
 
 </div>
+
+<script src="/node_modules/jquery/dist/jquery.js"></script>
+
+<script>
+
+	var departureCity = $('#departure-city'),
+	departureCityOptionsList = $('#departure-city-options-list'),
+	searchOption = $('.input__search-option');
+
+	departureCity.on('keyup', function(){
+
+	  // show list if stuff is typed into field
+	  if(departureCityOptionsList.hasClass('hide'))
+	  {
+	    // remove class hide
+	    departureCityOptionsList.removeClass('hide');
+	  }
+	  // if the option box is shown and the field is empty
+	  if(!departureCityOptionsList.hasClass('hide') && departureCity.val() === "")
+	  {
+	    // hide the options box
+	    departureCityOptionsList.addClass('hide');
+	  }
+
+    var filter, a, i;
+
+    filter = departureCity.val().toUpperCase();
+    a = departureCityOptionsList.find(".input__search-option");
+    for (i = 0; i < a.length; i++) {
+      if (a[i].innerHTML.toUpperCase().indexOf(filter) > -1) {
+        a[i].style.display = "";
+      } else {
+        a[i].style.display = "none";
+      }
+    }
+
+	});
+
+	searchOption.on('click', function(e){
+	  var currentOption = $(e.currentTarget),
+	  currentOptionName = currentOption.attr('data-location-name'),
+	  currentOptionCode = currentOption.attr('data-location-code');
+
+	  departureCity.val(currentOptionName);
+	  departureCityOptionsList.addClass('hide');
+
+	});
+
+
+</script>
 
 </body>
 </html>

@@ -3,6 +3,7 @@
   $this: '.input';
 
   text-align: left;
+  position: relative;
 
 
   &__label{
@@ -52,6 +53,20 @@
       border:           0;
     }
   }
+
+  &__search-options{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    padding: 20px;
+    z-index: 2;
+  }
+  &__search-option{
+    margin-bottom: 5px;
+  }
+
 
   &--quote{
     padding-bottom: 10px;
