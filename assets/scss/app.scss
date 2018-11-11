@@ -1,3 +1,15 @@
-//@import "partials/foundation";
-@import "partials/bootstrap";
+@import "partials/foundation";
 @import "partials/global";
+@import "partials/spacing";
+
+
+@import "base/variables";
+
+
+@import "components/full-page-header";
+@import "components/offer-stamp";
+@import "components/input";
+@import "components/buttons";
+@import "components/loader";
+@import "components/flight-card";
+@import "components/slider";

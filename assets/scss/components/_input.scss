@@ -1,0 +1,60 @@
+.input{
+
+  $this: '.input';
+
+  // Base Styles
+  background-color: #fff;
+  padding: 15px 15px 15px 45px;
+  border-radius: 2px;
+  position: relative;
+  color: #7f8083;
+  box-shadow: none;
+  font-size: 15px;
+  height: auto;
+
+
+  /** MODS */
+
+  &--icon{
+
+    &:before{
+      position: absolute;
+      top: 50%;
+      left: 15px;
+      transform: translateY(-50%);
+      font-size: 18px;
+      color: $primary-color;
+      font-family: 'icomoon';
+    }
+
+    &-plane-up{
+      &:before{
+        content: '\e904';
+      }
+    }
+
+    &-plane-down{
+      &:before{
+        content: '\e904';
+      }
+    }
+
+    &-calendar{
+      &:before{
+        content: '\e908';
+      }
+    }
+
+    &-person{
+      &:before{
+        content: '\e909';
+      }
+    }
+
+    &-none{
+      padding-left: 15px;
+    }
+
+  }
+
+}

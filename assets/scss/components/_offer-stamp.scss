@@ -1,0 +1,44 @@
+.offer-stamp{
+
+  $this: '.offer-stamp';
+
+
+  // Base Styles
+
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: $primary-color;
+  color: #fff;
+  position: absolute;
+  top: 70px;
+  right: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  transform: rotate(20deg);
+
+
+  /** ELEMENTS */
+
+  &__get{
+    font-size: 30px;
+    line-height: 30px;
+    font-style: italic;
+    margin-bottom: 5px;
+  }
+
+  &__price{
+    font-size: 30px;
+    line-height: 30px;
+    margin-bottom: 10px;
+  }
+
+  &__first-flight{
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 2px;
+  }
+
+}

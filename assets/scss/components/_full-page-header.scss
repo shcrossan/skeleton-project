@@ -1,0 +1,120 @@
+// FULL PAGE HEADER COMPONENT
+
+.full-page-header{
+
+  $this: '.full-page-header';
+
+  // Base Styles
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+
+  /** Elements */
+
+  // Logo element
+  &__logo{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+
+    span{
+      font-size: 90px;
+      color: $primary-color;
+    }
+  }
+
+
+
+  &__tag{
+    font-size: 35px;
+    line-height: 35px;
+    font-style: italic;
+    margin-bottom: 50px;
+    color: #fff;
+  }
+
+  &__title{
+    font-size: 70px;
+    line-height: 70px;
+    font-style: italic;
+    margin-bottom: 50px;
+    color: #fff;
+    text-transform: uppercase;
+
+    span{
+      text-transform: lowercase;
+    }
+  }
+
+  &__subtitle{
+    font-size: 25px;
+    color: $primary-color;
+    font-style: italic;
+  }
+
+  &__terms{
+    position: absolute;
+    bottom: 20px;
+    left: 40px;
+    color: #818181;
+
+    a{
+      color: #818181;
+      text-decoration: underline;
+      transition: 0.5s ease;
+
+      &:hover{
+        color: #fff;
+      }
+
+    }
+
+  }
+
+  &__find-out-more{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #818181;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.5s ease;
+
+    &:hover{
+      color: #fff;
+    }
+
+    p{
+      font-size: 13px;
+      font-weight: 700;
+      margin-bottom: 15px;
+      text-transform: uppercase;
+    }
+
+  }
+
+
+  /** Mods */
+
+  &--lander{
+    background-image: url(/assets/img/lander-header-background.jpg);
+
+    #{$this}__title{
+      margin-bottom: 165px;
+    }
+
+  }
+
+  &--confirmation{
+    background-image: url(/assets/img/confirmation-header-background.jpg);
+  }
+
+}

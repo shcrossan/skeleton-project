@@ -1,0 +1,14 @@
+[data-flight-slider]{
+
+  .slick-initialized .slick-slide{
+    display: flex;
+  }
+
+  .slick-slide{
+    height: auto;
+  }
+
+}
+.slick-initialized .slick-slide{
+  display: flex;
+}

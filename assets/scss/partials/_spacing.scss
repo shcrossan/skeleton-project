@@ -1,0 +1,112 @@
+/**
+ * Spacing.
+ *
+ * The classes are named using the format:
+ * .{property}-{size}
+ * .{property}{side}-{size}
+ * .{property}{side}-{breakpoint}-{size}
+ * .{property}-{breakpoint}-{size}
+ *
+ * Examples:
+ * .p-5       # padding: 25px;
+ * .pt-10     # padding-top: 50px;
+ * .mr-md-7   # margin-right: 35px;   # Medium up.
+ * .m-lg-3    # margin: 15px;         # Large up.
+ *
+ * Important has been declared for each statement. This is to override any other
+ * selectors that may be making use of the same property. This is a utility
+ * class. If you don't want this overriding, remove the class from your HTML
+ * element.
+ *
+ * Variables that can be overridden:
+ *  - $spacing--breakpoints   # Breakpoints catered for.
+ *  - $spacing--base-size     # Size increment per iteration.
+ *  - $spacing--min-count     # Start of the iteration (size * min-count).
+ *  - $spacing--max-count     # End of the iteration (size * max-count).
+ */
+
+// CSS properties.
+$spacing--properties: (
+  'p': 'padding',
+  'm': 'margin',
+);
+
+// Which side for the property.
+$spacing--sides: (
+  't':    'top',
+  'r':    'right',
+  'b':    'bottom',
+  'l':    'left',
+);
+
+// The breakpoints.
+$spacing--breakpoints: (
+  'sm':   'small-up',
+  'md':   'medium-up',
+  'lg':   'large-up',
+  'smo':  'small-only',
+  'mdo':  'medium-only',
+) !default;
+
+// Auto identifier on class name.
+$spacing--auto-identifier: 'x';
+
+// Size and iterating options.
+$spacing--base-size: 5px !default;
+$spacing--min-count: 0 !default;
+$spacing--max-count: 50 !default;
+
+
+/**
+ * Loop css properties (margin, padding).
+ */
+@each $property-key, $property-value in $spacing--properties {
+
+  // Auto.
+  .#{$property-key}-#{$spacing--auto-identifier} {
+    #{$property-value}: auto !important;
+  }
+
+
+  /**
+   * Iterate the sizes - min to max.
+   */
+  @for $i from $spacing--min-count to $spacing--max-count {
+
+    // The size - after iterative calculation.
+    $size: $spacing--base-size * $i;
+
+    // .{property}-{size}.
+    .#{$property-key}-#{$i} {
+      #{$property-value}: #{$size} !important;
+    }
+
+  }
+
+  /**
+   * Loop Sides (top, left, right, bottom).
+   */
+  @each $side-key, $side-value in $spacing--sides {
+
+    // Auto.
+    .#{$property-key}#{$side-key}-#{$spacing--auto-identifier} {
+      #{$property-value}-#{$side-value}: auto !important;
+    }
+
+
+    /**
+     * Iterate the sizes - min to max.
+     */
+    @for $i from $spacing--min-count to $spacing--max-count {
+
+      // The size - after iterative calculation.
+      $size: $spacing--base-size * $i;
+
+      // .{property}{sides}-{size}.
+      .#{$property-key}#{$side-key}-#{$i} {
+        #{$property-value}-#{$side-value}: #{$size} !important;
+      }
+    }
+  }
+
+}
