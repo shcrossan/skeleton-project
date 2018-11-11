@@ -1,0 +1,141 @@
+.typeahead-component {
+  $this: ".typeahead-component";
+  $typeahead-component--input-height: 70px;
+  $typeahead-component--arrow-size: 10px;
+  width: 100%;
+
+  &__label {
+    width: 100%;
+    position: relative;
+
+    &:after {
+      content: attr(input-suggestion);
+      position: absolute;
+      z-index: 999;
+      top: 100%;
+      left: 0;
+      display: inline-block;
+      margin-top: 10px;
+      font-size: 16px;
+      color: #c3c3c3;
+    }
+  }
+
+  &__input {
+    width: 100%;
+    position: relative;
+    font-size: 16px;
+    margin-bottom: 0;
+  }
+
+  &__icon{
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    color: $primary-color;
+    font-size: 16px;
+    z-index: 5;
+  }
+
+  &__menu {
+    background-color: white;
+    bottom: calc(100% + 25px);
+    width:300px;
+    top: unset;
+    height: 280px;
+    border-radius: 4px;
+    position: absolute;
+    display: none;
+    box-shadow: 0 0 25px 0 #222;
+    border: 1px solid white;
+
+    #{$this}__dataset {
+      height: 100%;
+      overflow: auto;
+    }
+
+    #{$this}__item {
+      font-size: 0;
+      position: relative;
+      vertical-align: top;
+      border-bottom: 1px solid #e1e1e1;
+      height: 70px;
+
+      &:last-of-type {
+        border-bottom: none;
+      }
+
+      &-recommended {
+        background-color: #f2f2f2;
+
+        #{$this}__location{
+          padding-right: 50px;
+          position: relative;
+          &:after{
+            content: '\f005';
+            font-family: "Font Awesome 5 Free";
+            position: absolute;
+            top: 50%;
+            right: 15px;
+            font-size: 15px;
+            transform: translateY(-50%);
+            color: $primary-color;
+          }
+
+        }
+
+      }
+
+      #{$this}__airport {
+        font-size: 14px;
+        text-transform: uppercase;
+        font-weight: 600;
+        margin-top: 15px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        width: 95%;
+        overflow: hidden;
+        color: #5c5d5f;
+      }
+
+      #{$this}__distance {
+        display: inline-block;
+        width: 25%;
+        font-size: 12px;
+        text-align: center;
+        height: $typeahead-component--input-height;
+        vertical-align: top;
+        line-height: $typeahead-component--input-height;
+      }
+
+      #{$this}__location {
+        display: inline-block;
+        width: 75%;
+        height: $typeahead-component--input-height;
+      }
+
+      #{$this}__address {
+        font-size: 13px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        width: 95%;
+        overflow: hidden;
+        color: #7f8083;
+      }
+    }
+
+    &:after {
+      content: '';
+      display: inline-block;
+      position: absolute;
+      border-top: $typeahead-component--arrow-size solid white;
+      border-right: $typeahead-component--arrow-size solid transparent;
+      border-bottom: $typeahead-component--arrow-size solid transparent;
+      border-left: $typeahead-component--arrow-size solid transparent;
+      bottom: -#{$typeahead-component--arrow-size * 2};
+      left: 31%;
+      transform: translateX(-50%);
+    }
+  }
+}

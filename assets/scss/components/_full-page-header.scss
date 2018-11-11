@@ -33,16 +33,28 @@
 
 
   &__tag{
-    font-size: 35px;
-    line-height: 35px;
+
+    @include breakpoint(medium up){
+      font-size: 35px;
+      line-height: 35px;
+    }
+
+    font-size: 20px;
+    line-height: 20px;
     font-style: italic;
     margin-bottom: 50px;
     color: #fff;
   }
 
   &__title{
-    font-size: 70px;
-    line-height: 70px;
+
+    @include breakpoint(medium up){
+      font-size: 70px;
+      line-height: 70px;
+    }
+
+    font-size: 35px;
+    line-height: 35px;
     font-style: italic;
     margin-bottom: 50px;
     color: #fff;
@@ -108,7 +120,10 @@
     background-image: url(/assets/img/lander-header-background.jpg);
 
     #{$this}__title{
-      margin-bottom: 165px;
+      @include breakpoint(large up){
+        margin-bottom: 165px;
+      }
+      margin-bottom: 80px;
     }
 
   }

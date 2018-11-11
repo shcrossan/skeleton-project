@@ -2,10 +2,14 @@
 <head>
 	<link rel="stylesheet" type="text/css" href="assets/css/app.css">
 	<link rel="stylesheet" href="https://i.icomoon.io/public/0ead7c452b/XclusiveJets/style.css">
+	<!--<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">-->
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
 </head>
 <body>
 
-	<div class="full-page-header full-page-header--lander">
+	<div class="full-page-header full-page-header--lander mb-23">
 
 		<div class="full-page-header__logo">
 			<span class="icon-X"></span>
@@ -32,61 +36,149 @@
 
 		<div class="grid-container">
 
-			<div class="grid-x grid-padding-x">
+			<div class="grid-x">
 
-				<div class="cell large-2">
+				<div class="cell large-12 large-offset-0 medium-10 medium-offset-1 small-12">
 
-					<div class="input input--icon input--icon-plane-up">
-						Departure
-					</div>
+					<div class="grid-x grid-padding-x">
 
-				</div>
+						<div class="cell large-2 medium-6 small-12 pos-r">
 
-				<div class="cell large-2">
-
-					<div class="input input--icon input--icon-plane-down">
-						Destination
-					</div>
-
-				</div>
-
-				<div class="cell large-3">
-
-					<div class="input input--icon input--date-time input--icon-calendar">
-
-						<div class="grid-x">
-							<div class="cell small-8">
-								8 November 2018
+							<span typeahead-output="">
+						<div class="typeahead-component__menu">
+							<div class="typeahead-component__dataset">
+								<div class="typeahead-component__item typeahead-component__item-recommended">
+									<div class="typeahead-component__distance">INU</div>
+									<div class="typeahead-component__location">
+										<div class="typeahead-component__airport">Nauru International Airport</div>
+										<div class="typeahead-component__address">Yaren District</div>
+									</div>
+								</div>
+								<div class="typeahead-component__item">
+									<div class="typeahead-component__distance">BUA</div>
+									<div class="typeahead-component__location">
+										<div class="typeahead-component__airport">Buka Airport</div>
+										<div class="typeahead-component__address">Buka Island</div>
+									</div>
+								</div>
+								<div class="typeahead-component__item">
+									<div class="typeahead-component__distance">HIR</div>
+									<div class="typeahead-component__location">
+										<div class="typeahead-component__airport">Honiara International Airport</div>
+										<div class="typeahead-component__address">Honiara</div>
+									</div>
+								</div>
+								<div class="typeahead-component__item ">
+									<div class="typeahead-component__distance">MUA</div>
+									<div class="typeahead-component__location">
+										<div class="typeahead-component__airport">Munda Airport</div>
+										<div class="typeahead-component__address">Mundu</div>
+									</div>
+								</div>
 							</div>
-							<div class="cell small-4 text-center">
-								11:00
+						</div>
+					</span>
+
+							<div class="typeahead-component" typeahead-component>
+								<label for="departure" class="typeahead-component__label" input-suggestion="">
+									<span class="typeahead-component__icon icon-Quote"></span>
+									<input id="departure" type="text" typeahead-input class="input input--icon input--icon-plane-up" placeholder="Departure" />
+									<span typeahead-output></span>
+								</label>
 							</div>
+
+						</div>
+
+						<div class="cell large-2 medium-6 small-12 pos-r">
+
+							<span typeahead-output="">
+						<div class="typeahead-component__menu">
+							<div class="typeahead-component__dataset">
+								<div class="typeahead-component__item typeahead-component__item-recommended">
+									<div class="typeahead-component__distance">INU</div>
+									<div class="typeahead-component__location">
+										<div class="typeahead-component__airport">Nauru International Airport</div>
+										<div class="typeahead-component__address">Yaren District</div>
+									</div>
+								</div>
+								<div class="typeahead-component__item">
+									<div class="typeahead-component__distance">BUA</div>
+									<div class="typeahead-component__location">
+										<div class="typeahead-component__airport">Buka Airport</div>
+										<div class="typeahead-component__address">Buka Island</div>
+									</div>
+								</div>
+								<div class="typeahead-component__item">
+									<div class="typeahead-component__distance">HIR</div>
+									<div class="typeahead-component__location">
+										<div class="typeahead-component__airport">Honiara International Airport</div>
+										<div class="typeahead-component__address">Honiara</div>
+									</div>
+								</div>
+								<div class="typeahead-component__item ">
+									<div class="typeahead-component__distance">MUA</div>
+									<div class="typeahead-component__location">
+										<div class="typeahead-component__airport">Munda Airport</div>
+										<div class="typeahead-component__address">Mundu</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</span>
+
+							<div class="typeahead-component" typeahead-component>
+								<label for="departure" class="typeahead-component__label" input-suggestion="">
+									<span class="typeahead-component__icon icon-Quote"></span>
+									<input id="destination" type="text" typeahead-input class="input input--icon input--icon-plane-up" placeholder="Destination" />
+									<span typeahead-output></span>
+								</label>
+							</div>
+
+						</div>
+
+						<div class="cell large-3 small-12 mb-4">
+
+							<div class="input input--icon input--date-time input--icon-calendar">
+
+								<div class="grid-x">
+									<div class="cell small-8">
+										8 November 2018
+									</div>
+									<div class="cell small-4 text-center">
+										11:00
+									</div>
+								</div>
+
+							</div>
+
+						</div>
+						<div class="cell large-1 medium-4 small-12">
+
+							<div class="input input--icon input--icon-person input--dropdown text-center">
+								1
+							</div>
+
+						</div>
+						<div class="cell large-2 medium-4">
+							<div class="input input--icon-none input--dropdown">
+								One Way
+							</div>
+						</div>
+						<div class="cell large-2 medium-4">
+
+							<div class="button button--primary">
+								Quote Now
+							</div>
+
 						</div>
 
 					</div>
 
 				</div>
-				<div class="cell large-1">
-
-					<div class="input input--icon input--icon-person input--dropdown text-center">
-						1
-					</div>
-
-				</div>
-				<div class="cell large-2">
-					<div class="input input--icon-none input--dropdown">
-						One Way
-					</div>
-				</div>
-				<div class="cell large-2">
-
-					<div class="button button--primary">
-						Quote Now
-					</div>
-
-				</div>
 
 			</div>
+
+
 
 		</div>
 
@@ -96,6 +188,130 @@
 
 		<div class="full-page-header__find-out-more">
 			<p>find out more</p><span class="icon-Arrow"></span>
+		</div>
+
+	</div>
+
+	<div class="content-block grid-container">
+
+		<div class="text-center">
+
+			<h4>
+				Enjoy the Xperience of
+			</h4>
+
+			<h2>
+				personal <span>jet</span> TRAVEL
+			</h2>
+
+		</div>
+
+		<div class="grid-x grid-padding-x mb-8">
+
+			<div class="cell large-6 content-block__image">
+
+				<img src="/assets/img/static1.squarespace.jpg">
+
+			</div>
+
+			<div class="cell large-6 content-block__text">
+
+				<div class="content-block__tag">From your first enquiry</div>
+				<div class="content-block__title">Our team provide a person Xperience</div>
+				<div class="content-block__description">
+					Simple. Efficient. Reliable. When scheduling a flight, every detail is covered to meet your exacting requirements. Be it a particular bottle of champagne or magazine on board or organising a chauffeured service to the airport.<br><br>
+					We are committed to doing everything possible to ensure your expectations are surpassed.</div>
+
+			</div>
+
+		</div>
+
+		<div class="content-block__seperator"></div>
+
+		<div class="grid-x grid-padding-x mb-8">
+
+			<div class="cell large-6 large-order-2 content-block__image">
+
+				<img src="/assets/img/static1.squarespace-1.jpg">
+
+			</div>
+
+			<div class="cell large-6 large-order-1 content-block__text">
+
+				<div class="content-block__tag">DEPART IN STYLE</div>
+				<div class="content-block__title">Private, on time and on your schedule</div>
+				<div class="content-block__description">
+					With Xclusive, the schedule revolves around you. If your meeting overruns, one simple call or email and we will rearrange your itinerary around you, for you.<br><br>
+					Depart from a private terminal, by-pass security and meet your personal pilot. All your details are checked in advance to ensure your experience is as smooth and stress free as possible.</div>
+
+			</div>
+
+		</div>
+
+		<div class="content-block__seperator"></div>
+
+		<div class="grid-x grid-padding-x mb-8">
+
+			<div class="cell large-6 content-block__image">
+
+				<img src="/assets/img/static1.squarespace-2.jpg">
+
+			</div>
+
+			<div class="cell large-6 content-block__text">
+
+				<div class="content-block__tag">YOUR FLIGHT</div>
+				<div class="content-block__title">The ultimate in luxury and comfort</div>
+				<div class="content-block__description">
+					We work with you to select the right aircraft to meet your every requirement. When you fly with us you enjoy an unparalleled experience.<br><br>
+					Whatever your needs are; we are happy to accommodate them. Whether this includes a-la-carte dining on board, specially ordered drinks or in-flight entertainment.</div>
+
+			</div>
+
+		</div>
+
+		<div class="content-block__seperator"></div>
+
+		<div class="grid-x grid-padding-x mb-8">
+
+			<div class="cell large-6 large-order-2 content-block__image">
+
+				<img src="/assets/img/static1.squarespace.png">
+
+			</div>
+
+			<div class="cell large-6 large-order-1 content-block__text">
+
+				<div class="content-block__tag">ARRIVE AT YOUR DESTINATION</div>
+				<div class="content-block__title">Refreshed, relaxed and ready to enjoy</div>
+				<div class="content-block__description">
+					When you arrive at your destination there will still be a security check, but you will be in a queue of maybe one or two, not 500! The whole process is therefore completed in minutes, making your time in the terminal very brief.<br><br>
+					Why not let us arrange a chauffeured driven car to meet you at the aircraft steps to whisk you off to your final destination.</div>
+
+			</div>
+
+		</div>
+
+		<div class="content-block__seperator"></div>
+
+		<div class="grid-x grid-padding-x mb-8">
+
+			<div class="cell large-6 content-block__image">
+
+				<img src="/assets/img/static1.squarespace-3.jpg">
+
+			</div>
+
+			<div class="cell large-6 content-block__text">
+
+				<div class="content-block__tag">ADDED LIFESTYLE</div>
+				<div class="content-block__title">We are committed beyond your flight</div>
+				<div class="content-block__description">
+					From last minute restaurant reservations to sold out event tickets and bespoke travel itineraries, our Xclusive Concierge service is designed to help create personalised experiences for you.<br><br>
+					Our team is available 24/7, ready and prepared to assist with your every request.</div>
+
+			</div>
+
 		</div>
 
 	</div>

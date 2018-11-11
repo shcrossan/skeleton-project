@@ -1,6 +1,9 @@
 @import "partials/foundation";
 @import "partials/global";
 @import "partials/spacing";
+@import "partials/position";
+
+@import url(https://use.fontawesome.com/releases/v5.5.0/css/all.css);
 
 
 @import "base/variables";
@@ -13,3 +16,6 @@
 @import "components/loader";
 @import "components/flight-card";
 @import "components/slider";
+@import "components/extras";
+@import "components/typeahead-component";
+@import "components/content-block";

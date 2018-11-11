@@ -1,5 +1,7 @@
 $(document).ready(function(){
 
-  $('[data-flight-slider]').slick();
+  $('[data-flight-slider]').slick({
+    dots: true
+  });
 
 });

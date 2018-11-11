@@ -5,14 +5,19 @@
 
   // Base Styles
 
+  @include breakpoint(large up){
+    top: 70px;
+    right: 70px;
+  }
+
   width: 150px;
   height: 150px;
   border-radius: 50%;
   background-color: $primary-color;
   color: #fff;
   position: absolute;
-  top: 70px;
-  right: 70px;
+  top: 20px;
+  right: 20px;
   display: flex;
   align-items: center;
   justify-content: center;

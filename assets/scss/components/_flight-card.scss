@@ -34,8 +34,16 @@
 
     .cell{
       padding: 35px;
+      position: relative;
     }
 
+  }
+
+  &__plane{
+    position: absolute;
+    top: 50%;
+    right: 35px;
+    transform: translateY(-50%);
   }
 
   &__info{
