@@ -1,0 +1,133 @@
+.passenger-popup{
+
+  $this: '.passenger-popup';
+  $component--arrow-size: 10px;
+
+  // Base Styles
+  background-color: white;
+  bottom: calc(100% + 25px);
+  width:300px;
+  top: unset;
+  height: 212px;
+  border-radius: 4px;
+  position: absolute;
+  display: block;
+  box-shadow: 0 0 25px 0 #222;
+  border: 1px solid white;
+
+  &:after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    border-top: $component--arrow-size solid white;
+    border-right: $component--arrow-size solid transparent;
+    border-bottom: $component--arrow-size solid transparent;
+    border-left: $component--arrow-size solid transparent;
+    bottom: -#{$component--arrow-size * 2};
+    left: 12%;
+    transform: translateX(-50%);
+  }
+
+  &__row{
+
+    height: 70px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #e1e1e1;
+
+    &:last-child{
+      border-bottom: 0;
+    }
+
+  }
+
+  &__text{
+
+    padding-left: 60px;
+    position: relative;
+
+    h5{
+      font-size: 14px;
+      line-height: 14px;
+      font-weight: 600;
+      color: #5c5d5f;
+      margin-bottom: 10px;
+    }
+
+    p{
+      font-size: 13px;
+      line-height: 13px;
+      color: #5c5d5f;
+      margin-bottom: 0;
+    }
+
+    &:before{
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 18px;
+      font-family: "Font Awesome 5 Free";
+      color: $primary-color;
+      font-weight: 900;
+      transform: translateY(-50%);
+      font-size: 20px;
+    }
+
+    &--adults{
+      &:before{
+        content: '\f0f2';
+      }
+    }
+    &--children{
+      &:before{
+        content: '\f290';
+      }
+    }
+    &--infants{
+      &:before{
+        content: '\f5b3';
+      }
+    }
+
+  }
+
+  &__input{
+
+    &-minus{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #a6a7ab;
+      font-size: 16px;
+    }
+    &-plus{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #a6a7ab;
+      font-size: 16px;
+    }
+    &-number{
+      border: 0;
+      box-shadow: none;
+      text-align: center;
+      margin: 0 auto;
+      background-color: $primary-color;
+      color: #fff;
+      border-radius: 50%;
+      width: 32px;
+      height: 32px;
+      padding: 0px 0px 3px 0;
+      pointer-events: none;
+
+      &:focus{
+        border: 0;
+        box-shadow: none;
+        background-color: $primary-color;
+      }
+
+    }
+
+  }
+
+}

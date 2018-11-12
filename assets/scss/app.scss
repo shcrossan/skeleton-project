@@ -8,6 +8,7 @@
 
 
 @import "base/variables";
+@import "base/fonts";
 
 
 @import "components/full-page-header";
@@ -21,3 +22,6 @@
 @import "components/typeahead-component";
 @import "components/content-block";
 @import "components/datepicker";
+@import "components/passenger-popup";
+@import "components/modal";
+@import "components/step";

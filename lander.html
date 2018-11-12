@@ -648,7 +648,68 @@
 							</div>
 
 						</div>
-						<div class="cell large-1 medium-4 small-12">
+						<div class="cell large-1 medium-4 small-12 pos-r">
+
+							<div class="passenger-popup">
+
+								<div class="grid-x passenger-popup__row">
+									<div class="cell large-7 passenger-popup__text passenger-popup__text--adults">
+										ADULTS
+									</div>
+									<div class="cell large-5 passenger-popup__input">
+
+										<div class="grid-x">
+
+											<div class="cell large-4 passenger-popup__input-minus"><i class="fas fa-minus"></i></div>
+											<div class="cell large-4">
+												<input type="text" class="passenger-popup__input-number" value="1" passengers-type="adult">
+											</div>
+											<div class="cell large-4 passenger-popup__input-plus"><i class="fas fa-plus"></i></div>
+
+										</div>
+
+									</div>
+								</div>
+								<div class="grid-x passenger-popup__row">
+									<div class="cell large-7 passenger-popup__text passenger-popup__text--children">
+										<h5>CHILDREN</h5>
+										<p>Age 2 - 11</p>
+									</div>
+									<div class="cell large-5 passenger-popup__input">
+
+										<div class="grid-x">
+
+											<div class="cell large-4 passenger-popup__input-minus"><i class="fas fa-minus"></i></div>
+											<div class="cell large-4">
+												<input type="text" class="passenger-popup__input-number" value="0" passengers-type="child">
+											</div>
+											<div class="cell large-4 passenger-popup__input-plus"><i class="fas fa-plus"></i></div>
+
+										</div>
+
+									</div>
+								</div>
+								<div class="grid-x passenger-popup__row">
+									<div class="cell large-7 passenger-popup__text passenger-popup__text--infants">
+										<h5>BABIES</h5>
+										<p>Age 0 - 2</p>
+									</div>
+									<div class="cell large-5 passenger-popup__input">
+
+										<div class="grid-x">
+
+											<div class="cell large-4 passenger-popup__input-minus"><i class="fas fa-minus"></i></div>
+											<div class="cell large-4">
+												<input type="text" class="passenger-popup__input-number" value="0" passengers-type="child">
+											</div>
+											<div class="cell large-4 passenger-popup__input-plus"><i class="fas fa-plus"></i></div>
+
+										</div>
+
+									</div>
+								</div>
+
+							</div>
 
 							<div class="input input--icon input--icon-person input--dropdown text-center">
 								1
@@ -679,7 +740,25 @@
 		</div>
 
 		<div class="full-page-header__terms">
-			*Offer subject to <a href="#">Terms & Conditions</a>
+			*Offer subject to <a data-open="termsModal">Terms & Conditions</a>
+		</div>
+
+		<div class="reveal modal" id="termsModal" data-reveal data-v-offset="150">
+
+			<h2>Terms & Conditions</h2>
+
+			<ol>
+
+				<li>Discount for new customers only.</li>
+				<li>Booking value must exceed £10,000 GBP.</li>
+				<li>Flight departure date must be on or before 31st December 2018.</li>
+				<li>Cannot be used for additional services, such as car transfers.</li>
+				<li>Cannot be used in conjunction with any other offers.</li>
+			</ol>
+
+			<button class="close-button" data-close aria-label="Close modal" type="button">
+				<span aria-hidden="true">&times;</span>
+			</button>
 		</div>
 
 		<div class="full-page-header__find-out-more">
@@ -811,6 +890,11 @@
 		</div>
 
 	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script type=“text/javascript” src=“//cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js”></script>
+	<!--<script type="text/javascript" src="/node_modules/foundation-sites/dist/js/foundation.min.js"></script>-->
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.5.0/js/foundation.js"></script>
+	<script src="assets/js/app.js"></script>
 </body>
 </html>
