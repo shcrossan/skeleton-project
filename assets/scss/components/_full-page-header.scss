@@ -119,7 +119,7 @@
 
   /** Mods */
 
-  &--lander{
+  &--plane-inner{
     background-image: url(/assets/img/lander-header-background.jpg);
 
     #{$this}__title{
@@ -131,7 +131,14 @@
 
   }
 
-  &--confirmation{
+  &--plane-engine{
+    background-image: url(/assets/img/plane-engine.jpg);
+  }
+  &--plane-stairs{
+    background-image: url(/assets/img/plane-stairs.jpg);
+  }
+
+  &--clouds{
     background-image: url(/assets/img/confirmation-header-background.jpg);
   }
 
