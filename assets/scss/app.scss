@@ -1,3 +1,11 @@
-//@import "partials/foundation";
-@import "partials/bootstrap";
+@import "partials/foundation";
+//@import "partials/bootstrap";
 @import "partials/global";
+
+
+// components
+
+@import "components/header";
+@import "components/form-block";
+@import "components/input";
+@import "components/footer";
